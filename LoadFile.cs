@@ -30,7 +30,7 @@ namespace Modules.AhkTest8
                     System.Threading.Thread.Sleep(100);
                 }
                 ahk.Reset();
-                MessageBox.Show("Engine finished.");
+                // MessageBox.Show("Engine finished.");
                 AhkResult = ("Finished successfully.");
             }
             catch (Exception e)
