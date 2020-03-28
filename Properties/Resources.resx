@@ -117,18 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="LoadScriptAndCallFunction_Description" xml:space="preserve">
-    <value>LoadScriptAndCallFunction</value>
-    <comment>Loads an AHK script and calls a function.</comment>
+  <data name="LoadFile_Description" xml:space="preserve">
+    <value>Creates engine, loads script, calls function</value>
+    <comment>Creates engine, loads script, calls function</comment>
   </data>
-  <data name="LoadScriptAndCallFunction_FriendlyName" xml:space="preserve">
-    <value>LoadScriptAndCallFunction</value>
+  <data name="LoadFile_FriendlyName" xml:space="preserve">
+    <value>LoadFile</value>
+    <comment>Creates engine, loads script, calls function</comment>
   </data>
-  <data name="LoadScriptAndCallFunction_ScriptName_Description" xml:space="preserve">
-    <value>ScriptName</value>
+  <data name="LoadFile_ScriptName_Description" xml:space="preserve">
+    <value>String path of AHK Script</value>
     <comment>String path of AHK Script</comment>
   </data>
-  <data name="LoadScriptAndCallFunction_ScriptName_FriendlyName" xml:space="preserve">
+  <data name="LoadFile_ScriptName_FriendlyName" xml:space="preserve">
     <value>ScriptName</value>
   </data>
   <data name="Error_ActionError_Description" xml:space="preserve">
@@ -137,11 +138,79 @@
   <data name="Error_ActionError_FriendlyName" xml:space="preserve">
     <value>Friendly Name of ActionError</value>
   </data>
-  <data name="LoadScriptAndCallFunction_FunctionName_Description" xml:space="preserve">
-    <value>FunctionName</value>
+  <data name="LoadFile_FunctionName_Description" xml:space="preserve">
+    <value>String with AHK function to call</value>
     <comment>String with AHK function to call</comment>
   </data>
-  <data name="LoadScriptAndCallFunction_FunctionName_FriendlyName" xml:space="preserve">
+  <data name="LoadFile_FunctionName_FriendlyName" xml:space="preserve">
     <value>FunctionName</value>
+  </data>
+  <data name="CreateAutoHotkeyEngine_Description" xml:space="preserve">
+    <value>CreateEngine</value>
+    <comment>Create engine for further use</comment>
+  </data>
+  <data name="CreateAutoHotkeyEngine_FriendlyName" xml:space="preserve">
+    <value>CreateEngine</value>
+    <comment>Create engine for further use</comment>
+  </data>
+  <data name="LoadEngineAndFile_Description" xml:space="preserve">
+    <value>Load existing engine, file, call function</value>
+    <comment>Engine plus script plus function</comment>
+  </data>
+  <data name="LoadEngineAndFile_ScriptName_FriendlyName" xml:space="preserve">
+    <value>ScriptName</value>
+    <comment>String path of AHK Script</comment>
+  </data>
+  <data name="GetVar_Description" xml:space="preserve">
+    <value>Get variable from loaded AutoHotkey engine</value>
+    <comment>Get AHK variable</comment>
+  </data>
+  <data name="GetVar_FriendlyName" xml:space="preserve">
+    <value>GetVar</value>
+    <comment>Get AHK variable</comment>
+  </data>
+  <data name="SetVar_Description" xml:space="preserve">
+    <value>Set a variable in loaded AutoHotkey engine</value>
+    <comment>Set AHK variable</comment>
+  </data>
+  <data name="SetVar_FriendlyName" xml:space="preserve">
+    <value>SetVar</value>
+    <comment>Set AHK variable</comment>
+  </data>
+  <data name="ExecRawInstant_Description" xml:space="preserve">
+    <value>Execute script - needs engine - no wait or terminate</value>
+    <comment>Execute script - needs engine - no wait or terminate</comment>
+  </data>
+  <data name="ExecRawInstant_FriendlyName" xml:space="preserve">
+    <value>ExecRawInstant</value>
+    <comment>Execute script - needs engine - no wait or terminate</comment>
+  </data>
+  <data name="ExecRaw_Description" xml:space="preserve">
+    <value>Create engine, load script using IsReady()</value>
+    <comment>May be redundant</comment>
+  </data>
+  <data name="ExecRaw_FriendlyName" xml:space="preserve">
+    <value>ExecRaw</value>
+  </data>
+  <data name="LoadEngineAndFile_FriendlyName" xml:space="preserve">
+    <value>LoadEngineAndFile</value>
+  </data>
+  <data name="ExecFunction_Description" xml:space="preserve">
+    <value>Call CreateAutoHotkeyEngine and LoadFunctionFile first.</value>
+  </data>
+  <data name="ExecFunction_FriendlyName" xml:space="preserve">
+    <value>ExecFunction</value>
+  </data>
+  <data name="LoadFunctionFile_Description" xml:space="preserve">
+    <value>Loads a script with function(s) to call</value>
+  </data>
+  <data name="LoadFunctionFile_FriendlyName" xml:space="preserve">
+    <value>LoadFunctionFile</value>
+  </data>
+  <data name="ExecFunction_Arg01_Description" xml:space="preserve">
+    <value>pass up to 10 args to function</value>
+  </data>
+  <data name="ExecFunction_FunctionName_Description" xml:space="preserve">
+    <value>String with AHK function to call</value>
   </data>
 </root>

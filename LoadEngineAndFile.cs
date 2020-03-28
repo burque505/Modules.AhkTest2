@@ -7,10 +7,13 @@ using sharpAHK;
 
 namespace Modules.AhkTest8
 {
-    [Action(Order = 1)]
+    [Action(Order = 2)]
     [Throws("ActionError")] // TODO: change error name (or delete if not needed)
-    public class LoadFile : ActionBase
+    public class LoadEngineAndFile : ActionBase
     {
+        [InputArgument]
+        public AutoHotkey.Interop.AutoHotkeyEngine AhkEngine { get; set; }
+        
         [InputArgument, DefaultValue("")]
         public string ScriptName { get; set; }
         [InputArgument, DefaultValue("")]
@@ -22,7 +25,7 @@ namespace Modules.AhkTest8
         {
             try
             {
-                var ahk = new AutoHotkey.Interop.AutoHotkeyEngine();
+                var ahk = AhkEngine;
                 ahk.LoadFile(ScriptName);
                 ahk.ExecFunction(FunctionName);
                 while (ahk.IsReady() == true)
@@ -45,3 +48,4 @@ namespace Modules.AhkTest8
 
     }
 }
+

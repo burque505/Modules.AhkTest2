@@ -4,9 +4,9 @@ using Robin.Core.Attributes;
 using System.Windows.Forms;
 using System.ComponentModel;
 
-namespace AhkTest2
+namespace Modules.AhkTest8
 {
-    [Action(Order = 1, Category = "ExecRawNoReturn")]
+    [Action(Order = 3)]
     [Throws("ActionError")] // TODO: change error name (or delete if not needed)
     public class ExecRaw : ActionBase
     {

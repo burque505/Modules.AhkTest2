@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AhkTest2")]
+[assembly: AssemblyTitle("Ahk")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("Modules.AhkTest2")]
+[assembly: AssemblyProduct("Modules.AhkTest8")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

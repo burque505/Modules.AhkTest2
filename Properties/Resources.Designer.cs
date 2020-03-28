@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AhkTest2.Properties {
+namespace Modules.AhkTest8.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace AhkTest2.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AhkTest2.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Modules.AhkTest8.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,24 @@ namespace AhkTest2.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CreateEngine.
+        /// </summary>
+        internal static string CreateAutoHotkeyEngine_Description {
+            get {
+                return ResourceManager.GetString("CreateAutoHotkeyEngine_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CreateEngine.
+        /// </summary>
+        internal static string CreateAutoHotkeyEngine_FriendlyName {
+            get {
+                return ResourceManager.GetString("CreateAutoHotkeyEngine_FriendlyName", resourceCulture);
             }
         }
         
@@ -79,56 +97,209 @@ namespace AhkTest2.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LoadScriptAndCallFunction.
+        ///   Looks up a localized string similar to pass up to 10 args to function.
         /// </summary>
-        internal static string LoadScriptAndCallFunction_Description {
+        internal static string ExecFunction_Arg01_Description {
             get {
-                return ResourceManager.GetString("LoadScriptAndCallFunction_Description", resourceCulture);
+                return ResourceManager.GetString("ExecFunction_Arg01_Description", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to LoadScriptAndCallFunction.
+        ///   Looks up a localized string similar to Call CreateAutoHotkeyEngine and LoadFunctionFile first..
         /// </summary>
-        internal static string LoadScriptAndCallFunction_FriendlyName {
+        internal static string ExecFunction_Description {
             get {
-                return ResourceManager.GetString("LoadScriptAndCallFunction_FriendlyName", resourceCulture);
+                return ResourceManager.GetString("ExecFunction_Description", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FunctionName.
+        ///   Looks up a localized string similar to ExecFunction.
         /// </summary>
-        internal static string LoadScriptAndCallFunction_FunctionName_Description {
+        internal static string ExecFunction_FriendlyName {
             get {
-                return ResourceManager.GetString("LoadScriptAndCallFunction_FunctionName_Description", resourceCulture);
+                return ResourceManager.GetString("ExecFunction_FriendlyName", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FunctionName.
+        ///   Looks up a localized string similar to String with AHK function to call.
         /// </summary>
-        internal static string LoadScriptAndCallFunction_FunctionName_FriendlyName {
+        internal static string ExecFunction_FunctionName_Description {
             get {
-                return ResourceManager.GetString("LoadScriptAndCallFunction_FunctionName_FriendlyName", resourceCulture);
+                return ResourceManager.GetString("ExecFunction_FunctionName_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create engine, load script using IsReady().
+        /// </summary>
+        internal static string ExecRaw_Description {
+            get {
+                return ResourceManager.GetString("ExecRaw_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ExecRaw.
+        /// </summary>
+        internal static string ExecRaw_FriendlyName {
+            get {
+                return ResourceManager.GetString("ExecRaw_FriendlyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Execute script - needs engine - no wait or terminate.
+        /// </summary>
+        internal static string ExecRawInstant_Description {
+            get {
+                return ResourceManager.GetString("ExecRawInstant_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ExecRawInstant.
+        /// </summary>
+        internal static string ExecRawInstant_FriendlyName {
+            get {
+                return ResourceManager.GetString("ExecRawInstant_FriendlyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get variable from loaded AutoHotkey engine.
+        /// </summary>
+        internal static string GetVar_Description {
+            get {
+                return ResourceManager.GetString("GetVar_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetVar.
+        /// </summary>
+        internal static string GetVar_FriendlyName {
+            get {
+                return ResourceManager.GetString("GetVar_FriendlyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Load existing engine, file, call function.
+        /// </summary>
+        internal static string LoadEngineAndFile_Description {
+            get {
+                return ResourceManager.GetString("LoadEngineAndFile_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LoadEngineAndFile.
+        /// </summary>
+        internal static string LoadEngineAndFile_FriendlyName {
+            get {
+                return ResourceManager.GetString("LoadEngineAndFile_FriendlyName", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to ScriptName.
         /// </summary>
-        internal static string LoadScriptAndCallFunction_ScriptName_Description {
+        internal static string LoadEngineAndFile_ScriptName_FriendlyName {
             get {
-                return ResourceManager.GetString("LoadScriptAndCallFunction_ScriptName_Description", resourceCulture);
+                return ResourceManager.GetString("LoadEngineAndFile_ScriptName_FriendlyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Creates engine, loads script, calls function.
+        /// </summary>
+        internal static string LoadFile_Description {
+            get {
+                return ResourceManager.GetString("LoadFile_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LoadFile.
+        /// </summary>
+        internal static string LoadFile_FriendlyName {
+            get {
+                return ResourceManager.GetString("LoadFile_FriendlyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to String with AHK function to call.
+        /// </summary>
+        internal static string LoadFile_FunctionName_Description {
+            get {
+                return ResourceManager.GetString("LoadFile_FunctionName_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FunctionName.
+        /// </summary>
+        internal static string LoadFile_FunctionName_FriendlyName {
+            get {
+                return ResourceManager.GetString("LoadFile_FunctionName_FriendlyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to String path of AHK Script.
+        /// </summary>
+        internal static string LoadFile_ScriptName_Description {
+            get {
+                return ResourceManager.GetString("LoadFile_ScriptName_Description", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to ScriptName.
         /// </summary>
-        internal static string LoadScriptAndCallFunction_ScriptName_FriendlyName {
+        internal static string LoadFile_ScriptName_FriendlyName {
             get {
-                return ResourceManager.GetString("LoadScriptAndCallFunction_ScriptName_FriendlyName", resourceCulture);
+                return ResourceManager.GetString("LoadFile_ScriptName_FriendlyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Loads a script with function(s) to call.
+        /// </summary>
+        internal static string LoadFunctionFile_Description {
+            get {
+                return ResourceManager.GetString("LoadFunctionFile_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LoadFunctionFile.
+        /// </summary>
+        internal static string LoadFunctionFile_FriendlyName {
+            get {
+                return ResourceManager.GetString("LoadFunctionFile_FriendlyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set a variable in loaded AutoHotkey engine.
+        /// </summary>
+        internal static string SetVar_Description {
+            get {
+                return ResourceManager.GetString("SetVar_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SetVar.
+        /// </summary>
+        internal static string SetVar_FriendlyName {
+            get {
+                return ResourceManager.GetString("SetVar_FriendlyName", resourceCulture);
             }
         }
     }

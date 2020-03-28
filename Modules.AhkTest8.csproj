@@ -7,8 +7,8 @@
     <ProjectGuid>{E1F8955F-ADED-4592-A73D-592E56D25A62}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AhkTest2</RootNamespace>
-    <AssemblyName>505.Modules.AhkTest2</AssemblyName>
+    <RootNamespace>Modules.AhkTest8</RootNamespace>
+    <AssemblyName>505.Modules.AhkTest8</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -48,6 +48,13 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExecFunction.cs" />
+    <Compile Include="LoadFunctionFile.cs" />
+    <Compile Include="ExecuteRawScriptInstant.cs" />
+    <Compile Include="GetVar.cs" />
+    <Compile Include="SetVariable.cs" />
+    <Compile Include="LoadEngineAndFile.cs" />
+    <Compile Include="CreateAutoHotkeyEngine.cs" />
     <Compile Include="ExecuteRawScript.cs" />
     <Compile Include="LoadFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
