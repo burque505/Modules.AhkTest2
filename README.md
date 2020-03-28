@@ -8,14 +8,24 @@ Build the project in VS 2019 (VS 2017 not tested) with Release configuration. Yo
 adding only an IsReady() function, which comes in quite handy and is sometimes indispensable, as in the 'ExecRaw' action of this project. 
 Review the code for its use.
 
-N.B.: This project is still *primitive.* AutoHotkeyEngine functions remaining to be implemented as Robin Actions:
--Eval(string)
--ExecLabel(string)
--GetVar(string)
--InitializePipesModule
--LoadScript(string)
--SetVar
-Some or all of these *may* be implemented as Actions. Whether they are Actions are not, they are avialable from the sharpAHK DLL, so they may be used.
+N.B.: Both sharpAHK and this project owe their existence to [AutoHotkey.Interop](https://github.com/amazing-andrew/AutoHotkey.Interop). View that page for many examples that can be easily converted to use with Robin.
+
+N.B.: This project is still *a work in progress.* AutoHotkeyEngine functions remaining to be implemented as Robin Actions:
+* Eval(string)
+* ExecLabel(string)
+* GetVar(string) 	*Done*
+* InitializePipesModule
+* LoadFile	 	*Done* Creates AutoHotkeyEngine, loads script, calls function. Specialized use.
+* LoadEngineAndFile	*Done* Requires existing AutoHotkeyEngine, loads script, calls function. Specialized use.
+* LoadFunctionFile  	*Done* Requires CreateAutoHotkeyEngine; creating function file must be done with care.
+* SetVar		*Done* Requires loaded AutoHotkeyEngine. Sets variable in AHK.
+* ExecRawInstant 	*Done* Requires CreateAutoHotkeyEngine; no 'IsReady' functionality. Use for one-shot scripts (not GUIS).
+* ExecFunction		*Done* Requires CreateAutoHotkeyEngine and LoadFunctionFile. Up to 10 arguments to function, optional return
+* GetVar		*Done* Requires loaded AutoHotkeyEngine. Gets variable from AHK.
+
+Some or all of these *may* be implemented as Actions. Whether they are Actions are not, they are available from the sharpAHK DLL, so they may be used.
+
+N.B.: Many names have been changed.
 
 *Example Robin Code for the ExecRaw action*
 With this action you can write your AutoHotkey code directly in the Robin script if you like.
@@ -43,7 +53,7 @@ ControlClick, Edit1
 return
 """
 
-AhkTest2.ExecRawNoReturn.ExecRaw RawScript: ScriptFile
+Ahk.ExecRaw RawScript: ScriptFile
 ```
 *Example Robin code using the 'LoadScriptAndCallFunction' action*
 AutoHotkey scripts must be custom tailored to be called by C# that most RPA platforms (and Robin) use. 
@@ -51,7 +61,7 @@ Adjust paths to suit.
 (A sample AutoHotkey script appears below the Robin code.)
 
 ```
-AhkTest2.LoadScriptAndCallFunction.LoadFile \
+Ahk.LoadFile \
     FunctionName:'StartIE' \
     ScriptName:'C:\work\RobinTests\ie_com3.ahk' \
     AhkResult=> AhkResult
@@ -81,7 +91,7 @@ SetTimer ; calling SetTimer with no argument turns it off.
 ExitApp
 
 ```
-MIT license. Do what you will with it.
+MIT license. Thanks for looking.
 
 Best regards,
 burque505
